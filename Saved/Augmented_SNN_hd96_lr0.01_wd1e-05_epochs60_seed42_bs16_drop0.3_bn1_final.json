@@ -1,0 +1,47 @@
+{
+    "csv_path": "metadata_modelnet10.csv",
+    "root_paths": [
+        "he_25_05/",
+        "he_25_33/",
+        "he_10_33/",
+        "he_10_05/"
+    ],
+    "batch_size": 16,
+    "remove_indices": [
+        4455,
+        4456,
+        4557
+    ],
+    "hidden_dim": 96,
+    "lr": 0.01,
+    "weight_decay": 1e-05,
+    "num_epochs": 60,
+    "save_path": null,
+    "confusion_interval": 5,
+    "seed": 42,
+    "num_layers": 2,
+    "dropout_rate": 0.3,
+    "use_batch_norm": true,
+    "use_weight_norm": false,
+    "residual_connections": true,
+    "conv_type": "sage",
+    "optimizer_type": "adam",
+    "scheduler_type": "cosine",
+    "lr_min": 0.0005,
+    "lr_max": 0.01,
+    "warmup_epochs": 5,
+    "label_smoothing": 0,
+    "gradient_clip_val": 1.0,
+    "use_ema": false,
+    "ema_decay": 0.999,
+    "early_stopping": true,
+    "patience": 15,
+    "log_file": "_50_Enhanced_SNN.csv",
+    "focal_gamma": 2.0,
+    "num_classes": 10,
+    "features": [
+        7,
+        2,
+        5
+    ]
+}
